@@ -137,6 +137,16 @@
         window.open("https://t.me/", "_blank");
       }
     </script>
-    </body>
+      <!-- Floating Staging Feedback & Chat Action Banner -->
+  <div id="stagingFeedbackBanner" style="position: fixed; bottom: 24px; right: 24px; background: #ef4444; color: white; padding: 14px 22px; border-radius: 12px; font-weight: 700; box-shadow: 0 10px 30px rgba(0,0,0,0.5); z-index: 1000; display: flex; align-items: center; gap: 10px; cursor: pointer; transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'" onclick="openFeedbackChat()">
+    <span style="font-size: 1.3rem;">💬</span> Chat with Sales & PO (Real-Time Fixes)
+  </div>
+
+  <script>
+    function openFeedbackChat() {
+      window.open("https://t.me/", "_blank");
+    }
+  </script>
+</body>
     
 </html>
