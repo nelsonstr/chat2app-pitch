@@ -25,6 +25,10 @@ app.get('/api/config', (req, res) => {
   res.json(demoData);
 });
 
+app.get('/api/topic-link', (req, res) => {
+  res.json({ url: process.env.CLIENT_TOPIC_URL || "" });
+});
+
 app.post('/api/config', (req, res) => {
   const { clientName, solutionTitle, metrics } = req.body;
   if (clientName) demoData.clientName = clientName;
